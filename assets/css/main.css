@@ -134,7 +134,7 @@ header::after {
 .quick__link__link {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em;
     padding: .3em 1.3em;
     background-image: linear-gradient(90deg, rgb(58, 48, 100), rgb(39, 85, 123));
     border-radius: 7px 12px 7px 12px;
