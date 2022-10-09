@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Ubuntu;
+    background-image: url(/assets/shared/cupdattune-mobile-bg-light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    padding: 10px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(90deg, rgb(58, 48, 100), rgb(39, 85, 123));
+    bottom: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    position: relative;
+}
+
+.nav-toggle {
+    width: 35px;
+    height: 35px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+}
+
+.hamburger {
+    width: 85%;
+    position: absolute;
+    height: 4px;
+    background-color: rgb(58, 48, 100);
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.hamburger::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    background-color: rgb(39, 85, 123);
+    transform: translate( -48%, -50%);
+}
+
+.hamburger::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 10px;
+    background-color: rgb(39, 85, 123);
+    transform: translate( -48%, 50%);
+}
+
+.logo {
+    width: 150px;
+    /* margin: 0 auto; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate( -50%, -50%); */
+}
+
+.nav__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box {
+    padding: .2em;
+    /* width: 10%; */
+    border: 4px solid rgb(39, 85, 123);
+    border-radius: 7px;
+}
+
+.primary-search {
+    font-size: .9em;
+    border: none;
+    outline: none;
+    font-family: Ubuntu;
+}
+
+.primary-search::placeholder {
+    color: #ccc;
+    /* font-size: .8em; */
+}
+
+.search-box button {
+    padding: .3em .5em;
+    border: none;
+    background-image: linear-gradient(90deg, rgb(58, 48, 100), rgb(39, 85, 123));
+    font-size: 1em;
+    color: white;
+    border-radius: 7px;
+}
+
+.quick__links {
+    list-style: none;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.quick__link__link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: .3em 1.3em;
+    background-image: linear-gradient(90deg, rgb(58, 48, 100), rgb(39, 85, 123));
+    border-radius: 7px 12px 7px 12px;
+    color: white;
+}
