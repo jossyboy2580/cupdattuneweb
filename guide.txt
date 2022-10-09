@@ -1,0 +1,2 @@
+if you want to push to the remote repository, use the command
+git push -u origin main
