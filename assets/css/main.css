@@ -126,8 +126,9 @@ header::after {
     list-style: none;
     margin: 10px 0;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* justify-content: center; */
+    flex-wrap: nowrap;
+    overflow-x: scroll;
     gap: 3px;
 }
 
@@ -139,4 +140,12 @@ header::after {
     background-image: linear-gradient(90deg, rgb(58, 48, 100), rgb(39, 85, 123));
     border-radius: 7px 12px 7px 12px;
     color: white;
+}
+
+footer {
+    padding: 30px 0;
+    background-color: #333;
+    margin-top: auto;
+    /* position: absolute; */
+    /* bottom: 0; */
 }
