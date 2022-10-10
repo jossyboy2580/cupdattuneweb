@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-gradient-bg: linear-gradient(90deg, rgb(58, 48, 100), rgb(39, 85, 123));
+}
+
 body {
     font-family: Ubuntu;
     background-image: url(/assets/shared/cupdattune-mobile-bg-light.png);
@@ -16,6 +20,10 @@ body {
 
 img {
     max-width: 100%;
+}
+
+button {
+    font-family: inherit;
 }
 
 header {
@@ -141,6 +149,29 @@ header::after {
     background-image: linear-gradient(90deg, rgb(58, 48, 100), rgb(39, 85, 123));
     border-radius: 7px 12px 7px 12px;
     color: white;
+}
+
+main section {
+    padding: 50px 8px;
+    box-shadow: 3px 3px 20px rgb(39, 85, 123, .5);
+    margin: 25px 0;
+    border-radius: 7px;
+    background-color: white;
+    position: relative;
+}
+
+main section::before {
+    content: "Trending";
+    color: white;
+    border-radius: 7px;
+    width: auto;
+    height: auto;
+    padding: .5em .8em;
+    background-image: var(--primary-gradient-bg);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    box-shadow: 3px 3px 2px rgb(39, 85, 123, .5);
 }
 
 footer {
