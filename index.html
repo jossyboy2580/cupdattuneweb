@@ -11,63 +11,108 @@
 
 <body>
     <header>
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="logo">
-                    <img src="assets/shared/logo.png" alt="" />
-                </div>
-                <div class="nav__search">
-                    <button class="nav-toggle" type="button" arial-label="navigation toggle">
-              <span class="hamburger" title="hamburger"></span>
-            </button>
-                    <form action="#" class="search">
-                        <div class="search-box">
-                            <input type="text" class="primary-search" placeholder="Search your favourite songs/artists" aria-label="form-input" />
-                            <button type="submit">Search</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="menu">
+            <button class="nav-toggle menu-button" aria-label="mobile menu toggler" role="button" type="button">
+          <img src="assets/svg/Group 2.svg" alt="" />
+        </button>
+            <div class="logo">
+                <a href="" class="home" role="home" title="home"><img src="assets/shared/logo.png" alt="" /></a>
             </div>
+            <button class="search-display menu-button" aria-label="search toggler" role="button" type="button">
+          <img src="assets/svg/Union 1.svg" alt="" />
+        </button>
         </div>
-    </header>
-    <section class="links">
-        <div class="container">
-            <ul class="quick__links">
-                <li class="quick__link-item">
-                    <a href="#" class="quick__link__link">Album</a>
-                </li>
-                <li class="quick__link-item">
-                    <a href="#" class="quick__link__link">Singles</a>
-                </li>
-                <li class="quick__link-item">
-                    <a href="#" class="quick__link__link">Trending</a>
-                </li>
-                <li class="quick__link-item">
-                    <a href="#" class="quick__link__link">Genres</a>
-                </li>
+        <section class="quicklinks__section">
+            <ul class="quicklinks">
+                <li class="quicklink"><a href="#" class="link">Album</a></li>
+                <li class="quicklink"><a href="#" class="link">Songs</a></li>
+                <li class="quicklink"><a href="#" class="link">Genres</a></li>
+                <li class="quicklink"><a href="#" class="link">Trending</a></li>
             </ul>
-        </div>
-    </section>
+        </section>
+        <div class="mobile-nav">
+            <button class="close-button menu-button" id="closeBtn" type="button" aria-label="close button">
+          <img src="assets/svg/close.svg" alt="" />
+        </button>
+            <div class="search">
+                <form class="search-form">
+                    <div class="search-field">
+                        <input type="text" class="form-input" placeholder="Enter song title or artist name" title="search field input" aria-empty="empty" />
+                        <input type="submit" class="form-submit" value="Search" />
+                    </div>
+                </form>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link"><span class="icon"
+                ><img src="" alt="" /><img
+                  src="assets/svg/Music.svg"
+                  alt="" /></span
+              >Singles</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><span class="icon"
+                ><img src="assets/svg/album.svg" alt="" /></span
+              >Albums</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><span class="icon"><img src="assets/svg/hot.svg" alt="" /></span
+              >Trending</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><span class="icon"><img src="" alt="" /></span>Artist</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><span class="icon"
+                ><img src="assets/svg/chart.svg" alt="" /></span
+              >Charts</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><span class="icon"
+                ><img src="assets/svg/promote.svg" alt="" /></span
+              >Promote a Song</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <main>
-        <div class="container">
-            <section class="trending">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos atque mollitia, aliquid ab voluptatem ad iure magni inventore debitis tempore, reprehenderit exercitationem quam consectetur laboriosam? Optio recusandae porro esse in vitae et culpa dolorum
-                    earum doloribus tempore? Quod aliquid ut nobis exercitationem, est cumque dolore ducimus? Sequi ducimus quas iure odit, consequatur quam quos ullam fuga esse! Recusandae enim fuga, dolor eos voluptatem deleniti voluptatum molestias!
-                    Delectus aliquam labore voluptates, possimus voluptatem cum veritatis ab.
-                </p>
-            </section>
-        </div>
+      <div class="container">
+        <section class="trending">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos atque
+            mollitia, aliquid ab voluptatem ad iure magni inventore debitis
+            tempore, reprehenderit exercitationem quam consectetur laboriosam?
+            Optio recusandae porro esse in vitae et culpa dolorum earum
+            doloribus tempore? Quod aliquid ut nobis exercitationem, est cumque
+            dolore ducimus? Sequi ducimus quas iure odit, consequatur quam quos
+            ullam fuga esse! Recusandae enim fuga, dolor eos voluptatem deleniti
+            voluptatum molestias! Delectus aliquam labore voluptates, possimus
+            voluptatem cum veritatis ab.
+          </p>
+        </section>
+      </div>
     </main>
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="logo">
-                    <img src="" alt="" />
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo">
+            <img src="" alt="" />
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
